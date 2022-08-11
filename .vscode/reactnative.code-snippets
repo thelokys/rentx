@@ -1,0 +1,37 @@
+{
+	"Basic React Native Interface": {
+		"prefix": "rnfc",
+		"body": [
+			"import React from 'react';",
+			"",
+			"import { Container, Title } from './styles';",
+			"",
+			"export const ${TM_DIRECTORY/^.+\\/(.*)$/$1/} = () => {",
+			"  return (",
+			"    <Container>",
+			"      <Title>Título</Title>",
+			"    </Container>",
+			"  );",
+			"};",
+			""
+		],
+		"description": "Basic React Native Interface with Styled Component"
+	},
+
+	"Basic React Native Styled Component": {
+		"prefix": "rnsc",
+		"body": [
+			"import styled from 'styled-components/native';",
+			"",
+			"export const Container = styled.View`",
+			"  flex: 1;",
+			"`;",
+			"",
+			"export const Title = styled.Text`",
+			"  font-size: 30px;",
+			"`;",
+			""
+		],
+		"description": "Basic Styled Component for React Native"
+	}
+}
